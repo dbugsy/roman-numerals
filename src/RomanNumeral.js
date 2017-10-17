@@ -9,23 +9,31 @@ const conversions = {
 };
 
 class RomanNumeral {
+  static get conversions() {
+    return conversions;
+  }
+
   constructor(decimal) {
     this.decimal = decimal;
+    this.output = '';
   }
 
   get numeral() {
-    if (this.decimal === 2) {
-      return 'II';
-    } else if (this.decimal === 3) {
-      return 'III';
-    } else if (this.decimal === 4) {
-      return 'IV';
+    if (this.decimal < 5) {
+      if (this.decimal === 4) {
+        return 'IV';
+      } else if (this.decimal < 4) {
+        this._appendOnes(this.decimal);
+        return this.output;
+      }
     }
     return RomanNumeral.conversions[this.decimal];
   }
 
-  static get conversions() {
-    return conversions;
+  _appendOnes(decimal) {
+    for (let i = 0; i < decimal; i += 1) {
+      this.output += conversions[1];
+    }
   }
 }
 
