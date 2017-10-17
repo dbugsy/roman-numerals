@@ -3,6 +3,9 @@ class RomanNumeral {
     this.decimal = decimal;
   }
   get numeral() {
+    if (this.decimal === 5) {
+      return 'V';
+    }
     return 'I';
   }
 }

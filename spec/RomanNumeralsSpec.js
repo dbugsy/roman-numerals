@@ -5,4 +5,9 @@ describe('RomanNumeral converts numbers to numerals', () => {
     const romanNumeral = new RomanNumeral(1);
     expect(romanNumeral.numeral).toEqual('I');
   });
+
+  it('converts 5 to V', () => {
+    const romanNumeral = new RomanNumeral(5);
+    expect(romanNumeral.numeral).toEqual('V');
+  });
 });
