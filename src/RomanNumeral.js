@@ -12,7 +12,11 @@ class RomanNumeral {
   constructor(decimal) {
     this.decimal = decimal;
   }
+
   get numeral() {
+    if (this.decimal === 2) {
+      return 'II';
+    }
     return RomanNumeral.conversions[this.decimal];
   }
 

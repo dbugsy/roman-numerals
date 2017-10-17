@@ -37,4 +37,11 @@ describe('RomanNumeral converts numbers to numerals', () => {
       expect(romanNumeral.numeral).toEqual('M');
     });
   });
+
+  describe('conversions to longer numerals', () => {
+    it('converts 2 to "II"', () => {
+      const romanNumeral = new RomanNumeral(2);
+      expect(romanNumeral.numeral).toEqual('II');
+    });
+  });
 });
