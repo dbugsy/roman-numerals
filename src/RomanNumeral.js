@@ -18,6 +18,8 @@ class RomanNumeral {
       return 'II';
     } else if (this.decimal === 3) {
       return 'III';
+    } else if (this.decimal === 4) {
+      return 'IV';
     }
     return RomanNumeral.conversions[this.decimal];
   }
