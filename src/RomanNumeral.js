@@ -16,6 +16,8 @@ class RomanNumeral {
   get numeral() {
     if (this.decimal === 2) {
       return 'II';
+    } else if (this.decimal === 3) {
+      return 'III';
     }
     return RomanNumeral.conversions[this.decimal];
   }

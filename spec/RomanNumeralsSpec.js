@@ -43,5 +43,10 @@ describe('RomanNumeral converts numbers to numerals', () => {
       const romanNumeral = new RomanNumeral(2);
       expect(romanNumeral.numeral).toEqual('II');
     });
+
+    it('converts 3 to "III"', () => {
+      const romanNumeral = new RomanNumeral(3);
+      expect(romanNumeral.numeral).toEqual('III');
+    });
   });
 });
