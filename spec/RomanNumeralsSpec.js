@@ -10,4 +10,9 @@ describe('RomanNumeral converts numbers to numerals', () => {
     const romanNumeral = new RomanNumeral(5);
     expect(romanNumeral.numeral).toEqual('V');
   });
+
+  it('converts 10 to X', () => {
+    const romanNumeral = new RomanNumeral(10);
+    expect(romanNumeral.numeral).toEqual('X');
+  });
 });
