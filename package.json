@@ -5,6 +5,9 @@
   "repository": "git@github.com:dbugsy/roman-numerals.git",
   "author": "dbugsy <dpbergquist@gmail.com>",
   "license": "MIT",
+  "scripts":{
+    "test": "jasmine"
+  },
   "devDependencies": {
     "eslint": "^4.9.0",
     "eslint-config-airbnb-base": "^12.1.0",
