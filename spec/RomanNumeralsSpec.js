@@ -53,5 +53,10 @@ describe('RomanNumeral converts numbers to numerals', () => {
       const romanNumeral = new RomanNumeral(4);
       expect(romanNumeral.numeral).toEqual('IV');
     });
+
+    it('converts 9 to "IX"', () => {
+      const romanNumeral = new RomanNumeral(9);
+      expect(romanNumeral.numeral).toEqual('IX');
+    });
   });
 });

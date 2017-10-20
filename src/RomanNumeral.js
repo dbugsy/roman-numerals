@@ -35,6 +35,10 @@ class RomanNumeral {
       this.output += conversions[1];
     }
   }
+
+  _orderOfMagnitude(decimal) {
+
+  }
 }
 
 module.exports = RomanNumeral;
